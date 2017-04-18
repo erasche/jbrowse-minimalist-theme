@@ -1,0 +1,295 @@
+@import url("flat.css"); 
+@import url("dna.css");
+
+.tundra .menuBar {
+	background: black;
+}
+
+div.overview{
+	background: white;
+	border: 0px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+div.locationThumb {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.1);
+}
+
+div.locationTrap {
+	border-bottom-color: white;
+}
+
+div#static_track {
+	background: white;
+	border-top: 0px;
+}
+
+div#navbox {
+	text-align: right !important;
+}
+
+
+#GenomeBrowser div.dijitContentPane {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+}
+#GenomeBrowser div.dijitContentPane div.menuBar {
+	-webkit-box-ordinal-group: 1;
+	-moz-box-ordinal-group: 1;
+	box-ordinal-group: 1;
+}
+#GenomeBrowser div.dijitContentPane div#navBox {
+	-webkit-box-ordinal-group: 2;
+	-moz-box-ordinal-group: 2;
+	box-ordinal-group: 2;
+}
+
+#GenomeBrowser div.dijitContentPane div.overview {
+	-webkit-box-ordinal-group: 3;
+	-moz-box-ordinal-group: 3;
+	box-ordinal-group: 3;
+}
+
+.track .global_highlight {
+	background: rgba(0, 0, 0, 0.1);
+	border: none;
+}
+
+
+/* MENUS */
+.dijitMenu {
+	background-color: white !important;
+	box-shadow: 0px 6px 16px #aaa;
+	border-radius: 3px;
+	color: black;
+}
+
+.tundra .dijitMenu, .tundra .dijitMenuBar {
+	border: 1px solid #999;
+}
+
+.tundra .dijitMenuSeparatorBottom, .tundra .dijitMenuSeparatorTop {
+	border-top: 1px solid #999 !important;
+}
+.tundra .dijitMenuSeparatorTop {
+	border-bottom: none;
+}
+.tundra .dijitMenuSeparatorBottom, .tundra .dijitMenuSeparatorTop {
+	border-top: 1px solid #999 !important;
+}
+.tundra .dijitMenuSeparatorTop {
+	border-bottom: none;
+}
+
+
+
+/* zoom stuff */
+
+.rubber-highlight {
+	border: 1px solid black;
+	height: 100%;
+	border-color: rgba( 0, 0, 0, 0.3  );
+	background-color: #80ff87;
+	background-color: rgba( 0, 0, 0, 0.3  );
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	cursor: crosshair;
+}
+.rubber-highlight div {
+	color: white;
+	padding: 0;
+	margin-top: 30px;
+	font-size: 160%;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: black 0px 0px 2px;
+}
+
+
+
+
+/* track Menu */
+.jbrowseHierarchicalTrackSelector, .dijitTitlePaneContentInner {
+	color: black;
+	background: white;
+}
+
+.dijitTitlePaneTitle div {
+	background: white;
+	border: none !important;
+	/*border-bottom: 1px solid black !important;*/
+}
+
+.tundra .dijitTitlePaneTitle {
+	border: none;
+	border-left: 4px solid black;
+	background: white;
+	padding: 0.5em;
+}
+
+.tundra .dijitTitlePaneContentInner {
+	padding: 0px;
+}
+.tundra .dijitTitlePaneContentInner label {
+	padding: 0.3em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
+.tundra .dijitTitlePaneContentOuter {
+	padding: 0.0em 0px 0.0em 0.8em;
+}
+.tundra .dijitTitlePaneContentOuter {
+	border: none;
+	border-left: 1px solid gray;
+}
+
+
+/* Overflow */
+div.block.height_overflow .height_overflow_message {
+	color: black;
+    text-shadow: none;
+	font-weight: normal;
+	background: white;
+}
+
+
+/* Tooltip */
+.featureTooltip {
+	background: white !important;
+	border: 1px solid black !important;
+	box-shadow: 0 0 2px #888 !important;
+}
+
+.featureTooltip .tooltipLabel {
+	 color: black !important;
+}
+
+.featureTooltip .tooltipDescription {
+	color: #555 !important;
+}
+
+
+
+
+
+/*
+
+#hierarchicalTrackPane_splitter {
+	background: #191919;
+	width: 5px;
+	border-right: 1px solid #191919;
+}
+
+.tundra .dijitTitlePane .dijitArrowNode {
+    background-position: -28px 0;
+}
+
+.tundra .dijitTitlePaneContentOuter, .tundra .dijitTitlePaneTitle {
+	 border: 1px solid black;
+}
+
+.dijitTitlePane {
+	margin-bottom: 1em;
+	box-shadow: 0 0 5px black;
+}
+
+.jbrowseHierarchicalTrackSelector label.tracklist-label:hover {
+	background: #232323;
+}
+
+.dijitMenu {
+	background-color: #3b3b3d !important;
+	box-shadow: 0px 3px 9px black;
+	color: white;
+}
+
+.tundra .dijitMenu, .tundra .dijitMenuBar {
+	border: 1px solid black;
+}
+
+.dijitDialogUnderlay {
+	 background: #111;
+}
+
+.tundra .dijitDialogTitleBar, div.dijitToolbar {
+	color: white !important;
+	background: #111 !important;
+	font-size: 125% !important;
+}
+
+.tundra .dijitDialogCloseIcon {
+	background: #c10000 !important;
+	border: none;
+}
+
+.dijitDialog {
+	box-shadow: 0 0 5px black !important;
+	border: none !important;
+}
+.dijitDialogPaneContent {
+	background: #5d5d5d !important;
+	border: none !important;
+}
+
+.detail .field {
+    background: rgb(59, 79, 175);
+	border: 1px solid hsla(230, 50%, 21%, 1);
+}
+
+div.detail.feature-detail {
+	color: white;
+}
+
+.feature-detail .core, .feature-detail .additional {
+	background: #333;
+	border: 1px solid #111;
+	padding-bottom: 1em;
+
+	box-shadow: 0 0 5px black;
+	margin-bottom: 1em;
+}
+
+.feature-detail .core h2.sectiontitle, .feature-detail .additional  h2.sectiontitle{
+	padding: 0.3em;
+	margin: 0px;
+	font-size: 135%;
+	background: #222;
+	margin-bottom: 0.3em;
+}
+
+.detail.feature-detail.subfeature-detail{
+	background: #444;
+	border: 1px solid #111;
+	padding: 0.5em;
+	box-shadow: 0 0 5px black;
+}
+
+.detail .value#feature_sequence2 {
+	padding: 0px;
+}
+
+.feature-detail .fastaView {
+	border: none;
+}
+
+.feature-detail .fastaView textarea, .alignment_container {
+	color: black;
+	background: #ccc;
+}
+
+.track-label.dojoDndHandle {
+	background: #eee !important;
+	opacity: 1;
+	border: 1px solid black;
+}
+
+*/
+

@@ -1,0 +1,15 @@
+/* Disable grid lines, gross */
+div.gridline_minor {
+	border: none
+}
+div.gridline_major {
+	border: none
+}
+
+div.overview {
+	background: #f9f9f9;
+}
+div.overview {
+	background: #333333;
+	border: 1px solid black;
+}
